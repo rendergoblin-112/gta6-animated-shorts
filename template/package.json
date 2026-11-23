@@ -1,0 +1,36 @@
+{
+  "name": "gta6-animated-short",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Flat 2D cartoon short engine (three.js drawn, Remotion encoded). A short = a project/ folder.",
+  "scripts": {
+    "studio": "remotion studio src/index.ts",
+    "check": "node tools/check.mjs",
+    "stills": "remotion render src/index.ts Stills out/stills --sequence --image-format=png --gl=angle --log=error && node tools/name-stills.mjs out/stills",
+    "keys": "remotion render src/index.ts Keys out/keys --sequence --image-format=jpeg --gl=angle --log=error && node tools/name-stills.mjs out/keys --keys",
+    "sheet": "node tools/sheet.mjs",
+    "pair": "node tools/pair.mjs",
+    "metrics": "node tools/metrics.mjs",
+    "views": "node tools/views.mjs",
+    "sfx:synth": "node tools/synth-sfx.mjs",
+    "sfx:gen": "node tools/gen-sfx.mjs",
+    "cues": "node tools/export-cues.mjs",
+    "mix": "node tools/export-cues.mjs && node tools/mix.mjs",
+    "render": "remotion render src/index.ts Main out/video.mp4 --gl=angle --codec=h264 --crf=18 --log=error",
+    "mux": "node tools/mux.mjs"
+  },
+  "dependencies": {
+    "@remotion/cli": "4.0.546",
+    "@remotion/google-fonts": "4.0.546",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "remotion": "4.0.546",
+    "three": "^0.170.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.31",
+    "@types/three": "^0.170.0",
+    "typescript": "^5.9.3"
+  }
+}
