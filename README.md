@@ -23,7 +23,7 @@ The format numbers come from measuring 19 animated GTA 6 shorts frame by frame (
 ## Install (one command)
 
 ```bash
-git clone --depth 1 https://github.com/muti1231/gta6-animated-shorts.git ~/.claude/skills/gta6-animated-shorts
+git clone --depth 1 https://github.com/rendergoblin-112/gta6-animated-shorts.git ~/.claude/skills/gta6-animated-shorts
 ```
 
 Restart Claude Code. The skill triggers on "make a GTA 6 cartoon short", "animated short", "turn this joke into a short"…
